@@ -17,6 +17,11 @@
           title="Settings"
           prepend-icon="mdi-cog"
         />
+        <v-list-item
+          @click="goToPage('/messengs')"
+          title="Messengs"
+          prepend-icon="mdi-cog"
+        />
       </v-list>
     </v-navigation-drawer>
 
@@ -34,9 +39,9 @@
 </template>
 
 <script setup lang="ts">
-definePageMeta({
-  layout: "defualt",
-});
+// definePageMeta({
+//   layout: "defualt",
+// });
 const drawer = ref(false);
 const router = useRouter();
 
